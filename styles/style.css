@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-html, body, .mainContainer, .bannerSection {
+html, body, .mainContainer, .bannerSection, .buySection {
   margin: 0;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -32,5 +32,18 @@ html, body, .mainContainer, .bannerSection {
 
 .logo {
   max-width: 240px;
+}
+
+.buySection .buyContainer {
+  background-color: white;
+  height: 100%;
+}
+
+.buySection .trianguloAzul {
+  width: 0;
+  height: 0;
+  border-bottom: 10vh solid #154479;
+  border-left: 100vw solid transparent;
+  transform: rotate(180deg);
 }
 /*# sourceMappingURL=style.css.map */

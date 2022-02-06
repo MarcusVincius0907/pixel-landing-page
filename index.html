@@ -20,10 +20,21 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
   <link rel="manifest" href="images/favico/manifest.json">
 
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/styles/style.css">
-  <!-- tailwind https://tailwindcss.com/docs/installation -->
-  <!-- <link rel="stylesheet" href="/styles/output.css"> -->
+  
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'th-green':'#01A78D'
+          }
+        }
+      }
+    }
+  </script>
 
   <title>Pixel</title>
 </head>
@@ -60,7 +71,7 @@
 
           <div class="flex justify-end w-full">
 
-            <div class="text-white max-w-lg mt-10">
+            <div class="text-white max-w-xl mt-10">
               <h1 class="text-6xl font-bold mb-5">L2M</h1>
               <div class="text-3xl">
                 <div class="mb-5">
@@ -84,6 +95,19 @@
       </div>
 
       
+      
+    </section>
+
+    <section class="buySection">
+      <div class="trianguloAzul">
+      </div>
+      <div class="buyContainer">
+        <div>
+          <div>
+            <div>A partir de R$1,00 você concorre a um prêmio de <span class="font-bold text-th-green">R$500,00</span> </div>
+          </div>
+        </div>
+      </div>
       
     </section>
   </div>

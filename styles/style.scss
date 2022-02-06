@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, .mainContainer, .bannerSection{
+html, body, .mainContainer, .bannerSection, .buySection{
   margin: 0;
   height: 100%;
   font-family: 'Open Sans', sans-serif;
@@ -12,12 +12,13 @@ html, body, .mainContainer, .bannerSection{
 }
 
 $th-green: #01A78D;
+$th-blue: #154479;
 
 #trapezoid {
   width: 0;
   height: 0;
 
-  border-bottom: 100vh solid #154479;
+  border-bottom: 100vh solid $th-blue;
   border-left: 100vw solid transparent;
 }
 
@@ -37,3 +38,16 @@ $th-green: #01A78D;
   max-width: 240px;
 }
 
+.buySection{
+  .buyContainer{
+    background-color: white;
+    height: 100%;
+  }
+  .trianguloAzul{
+    width: 0;
+    height: 0;
+    border-bottom: 10vh solid $th-blue;
+    border-left: 100vw solid transparent;
+    transform: rotate(180deg)
+  }
+}
