@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, .mainContainer, .bannerSection{
+  margin: 0;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+$th-green: #01A78D;
+
+#trapezoid {
+  width: 0;
+  height: 0;
+
+  border-bottom: 100vh solid #154479;
+  border-left: 100vw solid transparent;
+}
+
+.banner{
+  background-image: url(../images/dollarBannerGreen.png);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100%;
+}
+
+.btnLogin{
+  background-color: $th-green;
+}
+
+.logo{
+  max-width: 240px;
+}
+
