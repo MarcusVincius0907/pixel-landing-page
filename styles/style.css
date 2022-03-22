@@ -12,7 +12,7 @@ html, body, .mainContainer, .bannerSection, .buySection {
   width: 0;
   height: 0;
   border-bottom: 100vh solid #154479;
-  border-left: 100vw solid transparent;
+  border-left: 99vw solid transparent;
 }
 
 .banner {
@@ -39,11 +39,31 @@ html, body, .mainContainer, .bannerSection, .buySection {
   height: 100%;
 }
 
-.buySection .trianguloAzul {
+.trianguloAzul {
   width: 0;
   height: 0;
   border-bottom: 10vh solid #154479;
-  border-left: 100vw solid transparent;
+  border-left: 99vw solid transparent;
   transform: rotate(180deg);
+}
+
+.trianguloVerde {
+  width: 0;
+  height: 0;
+  border-bottom: 10vh solid #029d87;
+  border-left: 99vw solid transparent;
+  transform: rotate(0deg);
+}
+
+.trianguloAzulClaro {
+  width: 0;
+  height: 0;
+  border-bottom: 10vh solid #018ea6;
+  border-left: 99vw solid transparent;
+  transform: rotate(180deg);
+}
+
+.gradient {
+  background-image: linear-gradient(0deg, #018FA7 0%, #08545E 29.28%, #0A4354 36.08%, #0B384E 43.49%, #0B344C 51.68%, #0B394F 58.85%, #094757 67.11%, #08545E 72.55%, #01A78D 103.35%);
 }
 /*# sourceMappingURL=style.css.map */
