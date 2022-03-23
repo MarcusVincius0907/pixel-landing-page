@@ -20,6 +20,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favico/favicon-16x16.png">
   <link rel="manifest" href="images/favico/manifest.json">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="/styles/style.css">
   
 
@@ -30,6 +31,7 @@
         extend: {
           colors: {
             'th-green':'#01A78D',
+            'th-light-green': '#F6FFFD',
             'th-dark-green': '#056052',
             'th-blue':'#0D2A4A'
           }
@@ -43,7 +45,7 @@
 <body>
   <div class="mainContainer">
 
-    <!-- banner begin -->
+    <!-- banner inicio -->
     <section class="bannerSection relative">
 
       <div class=" absolute w-full ">
@@ -102,7 +104,7 @@
       
     </section>
 
-    <!-- buy section -->
+    <!-- comprar -->
     <section class="buySection" style="max-height: 550px;">
       <div class="trianguloAzul">
       </div>
@@ -123,7 +125,7 @@
       
     </section>
 
-    <!-- results -->
+    <!-- resultados -->
     <section class="h-full">
       <div class="trianguloVerde">
       </div>
@@ -160,6 +162,7 @@
       </div>
     </section>
 
+    <!-- premiação -->
     <section class="h-full" style="margin-top: 88px;">
       <div class="trianguloAzulClaro">
       </div>
@@ -207,6 +210,253 @@
 
       </div>
     </section>
+
+    <!-- como jogar -->
+    <section class="h-full">
+      <div class="trianguloVerde">
+      </div>
+      <div class="gradient h-full relative">
+        <img class="absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
+        <img class="absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
+        <div class="pt-20 m-auto w-full max-w-5xl ">
+          <div class="font-bold text-white text-5xl">
+            Como Jogar
+          </div>
+          
+          <div class="pt-10 flex ">
+            <div class="p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
+              <img style="height: 100px;" src="./images/comoJogarIcon1.png" alt="">
+              <div class="font-bold text-3xl pt-5 text-start w-full">O que é?</div>
+              <div class="h-1 bg-th-green px-2 w-full my-2"></div>
+              <div class="text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
+              <div class="w-full flex justify-end pt-2 ">
+                <span class=" cursor-pointer font-bold">Ler mais <i class="fa-solid fa-chevron-down ml-1"></i></span> 
+              </div>
+            </div>
+            <div class="p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
+              <img style="height: 100px;" src="./images/comoJogarIcon2.png" alt="">
+              <div class="font-bold text-3xl pt-5 text-start w-full">Como comprar?</div>
+              <div class="h-1 bg-th-green px-2 w-full my-2"></div>
+              <div class="text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
+              <div class="w-full flex justify-end pt-2 ">
+                <span class=" cursor-pointer font-bold">Ler mais <i class="fa-solid fa-chevron-down ml-1"></i></span> 
+              </div>
+            </div>
+            <div class="p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
+              <img style="height: 100px;" src="./images/comoJogarIcon3.png" alt="">
+              <div class="font-bold text-3xl pt-5 text-start w-full">Como concorrer?</div>
+              <div class="h-1 bg-th-green px-2 w-full my-2"></div>
+              <div class="text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
+              <div class="w-full flex justify-end pt-2 ">
+                <span class=" cursor-pointer font-bold">Ler mais <i class="fa-solid fa-chevron-down ml-1"></i></span> 
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-24 flex w-full justify-around">
+
+            <div class="cursor-pointer hover:opacity-80"><img width="200" src="./images/comoJogarVideoPlay.png" alt=""></div>
+
+            <div class="p-5 bg-white  h-full w-full rounded-md text-th-blue flex flex-col items-center max-w-xl">
+              <div class="font-bold text-3xl pb-3 text-start w-full">Assita nosso tutorial</div>
+              <div class="text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Probabilidade -->
+    <section class="h-full max-h-[800px]" style="margin-top: 75px;">
+      
+      <div class="gradient-inverse h-full relative">
+        <img class="absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
+        <img class="absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
+        <div class="pt-32 m-auto w-full max-w-5xl ">
+          <div class="font-bold text-white text-5xl">
+            Probabilidade
+          </div>
+          
+         <div class="pt-16">
+           <div class="w-full  rounded-md bg-[#047182]" >
+            <div class="w-full bg-th-blue p-3 text-xl font-bold flex justify-around rounded-t-md shadow-xl text-white">
+              <div class="w-60 text-center">Quantidade de pixels</div>
+              <div class="w-40 text-center">Valor</div>
+              <div class="w-40 text-center">Probabilidade</div>
+              <div class="w-40 text-center">Porcentagem</div>
+              <div class="w-40 text-center">Status</div>
+            </div>
+            <div class="rounded-b-md ">
+              <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                <div class="w-60 text-center">1</div>
+                <div class="w-40 text-center">R$ 1,00</div>
+                <div class="w-40 text-center">1/N de pixels</div>
+                <div class="w-40 text-center">0,7%</div>
+                <div class="w-40 text-center">Baixo</div>
+              </div>
+              <div class="h-1 bg-th-green w-full"></div>
+              <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                <div class="w-60 text-center">1</div>
+                <div class="w-40 text-center">R$ 1,00</div>
+                <div class="w-40 text-center">1/N de pixels</div>
+                <div class="w-40 text-center">0,7%</div>
+                <div class="w-40 text-center">Baixo</div>
+              </div>
+              <div class="h-1 bg-th-green w-full"></div>
+              <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                <div class="w-60 text-center">1</div>
+                <div class="w-40 text-center">R$ 1,00</div>
+                <div class="w-40 text-center">1/N de pixels</div>
+                <div class="w-40 text-center">0,7%</div>
+                <div class="w-40 text-center">Baixo</div>
+              </div>
+              <div class="h-1 bg-th-green w-full"></div>
+              <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                <div class="w-60 text-center">1</div>
+                <div class="w-40 text-center">R$ 1,00</div>
+                <div class="w-40 text-center">1/N de pixels</div>
+                <div class="w-40 text-center">0,7%</div>
+                <div class="w-40 text-center">Baixo</div>
+              </div>
+              <div class="h-1 bg-th-green w-full"></div>
+              <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                <div class="w-60 text-center">1</div>
+                <div class="w-40 text-center">R$ 1,00</div>
+                <div class="w-40 text-center">1/N de pixels</div>
+                <div class="w-40 text-center">0,7%</div>
+                <div class="w-40 text-center">Baixo</div>
+              </div>
+
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Receba seu premio -->
+    <section class="h-full">
+      
+      <div class="gradient h-full relative">
+        <img class="absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
+        <img class="absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
+        <div class="pt-20 m-auto w-full max-w-5xl ">
+          <div class="font-bold text-white text-5xl">
+            Receba seu premio
+          </div>
+
+          <div class="pt-5 text-white text-3xl">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum aperiam similique expedita ea repellendus.
+          </div>
+
+          <div class="relative flex justify-center items-center">
+            <div class="absolute">
+              <img class="w-[300px] m-auto" src="./images/recebaDiamante.png" alt="">
+              <div class="mt-8 text-white w-full">
+                <div class="cursor-pointer hover:opacity-50 px-3 py-2 m-auto bg-th-green text-center font-bold text-2xl rounded-md max-w-xs">Receber</div>
+              </div>
+            </div>
+            <div class="pt-10">
+              <img class="w-[900px] m-auto" src="/images/recebaMask.png" alt="">
+            </div>
+  
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- contato -->
+    <section class="h-full bg-th-light-green">
+      <div class="pt-20 m-auto w-full max-w-5xl">
+        <div class="font-bold text-th-blue text-5xl">
+          Contato
+        </div>
+        <div class="pt-5 text-th-blue text-3xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum aperiam similique expedita ea repellendus.
+        </div>
+        <div class="mt-20 shadow-xl bg-white p-5 rounded-md w-full">
+          <form class="pt-10 " action="">
+
+            <div class="flex w-full">
+              <div class="w-full">
+                <div class=" text-th-blue text-xl flex flex-col mb-5 ">
+                  <label class="mb-1" for="name">Nome</label>
+                  <input class="outline-none px-2 py-3 bg-gray-100 rounded-md" placeholder="Digite seu nome" type="text" name="name" id="">
+                </div>
+                <div class=" text-th-blue text-xl flex flex-col mb-5 ">
+                  <label class="mb-1" for="email">Email</label>
+                  <input class="outline-none px-2 py-3 bg-gray-100 rounded-md" placeholder="Digite seu email" type="email" name="email" id="">
+                </div>
+                <div class=" text-th-blue text-xl flex flex-col  ">
+                  <label class="mb-1" for="cel">Celular</label>
+                  <input class="outline-none px-2 py-3 bg-gray-100 rounded-md" placeholder="Digite seu número" type="text" name="cel" id="">
+                </div>
+              </div>
+  
+              <div class="w-10">
+  
+              </div>
+  
+              <div class="w-full">
+                <div class=" text-th-blue text-xl flex flex-col  ">
+                  <label class="mb-1" for="msg">Mensagem</label>
+                  <!-- <input class="outline-none px-2 py-3 bg-gray-100 rounded-md" placeholder="Digite sua mensagem" type="text" name="msg" id=""> -->
+                  <textarea class="outline-none px-2 py-3 bg-gray-100 rounded-md" placeholder="Digite sua mensagem" name="" id="" cols="30" rows="8"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="py-10">
+              <div class="mt-8 text-white w-full">
+                <div class="cursor-pointer hover:opacity-50 px-3 py-2 m-auto bg-th-green text-center font-bold text-2xl rounded-md max-w-xs">Enviar</div>
+              </div>
+            </div>
+
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class=" bg-th-blue">
+      <div class="w-full px-5 py-10  m-auto max-w-5xl text-white text-xl ">
+        <div class="w-full flex justify-between">
+
+          <div class="w-full p-2">
+            <div class=" ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum deleniti velit non officia sed perspiciatis suscipit illo.</div>
+          </div>
+
+          <div class="w-full p-2">
+            <div class="flex">
+              <div><i class="fa-solid fa-location-dot"></i></div>
+              <div class="ml-4">Rua João Batista Marcondes, 1234, Brooklyn, NY</div>
+            </div>
+            <div class="flex mt-2">
+              <div><i class="fa-solid fa-phone"></i></div>
+              <div class="ml-3">0800 122 1233</div>
+            </div>
+          </div>
+
+          <div class="flex text-3xl justify-around p-2">
+            <i class="fa-brands fa-whatsapp mx-2"></i>
+            <i class="fa-brands fa-facebook-f mx-2"></i>
+            <i class="fa-brands fa-instagram mx-2"></i>
+            <i class="fa-brands fa-youtube mx-2"></i>
+          </div>
+
+        </div>
+        <div class="pt-5 p-2">
+          <div class="pb-7">© 2022 sony copyright of america</div>
+          <div class="flex w-full max-w-xl ">
+            <div>Politicas de Privacidade</div>
+            <div class="ml-5">Termos e Condições</div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
   </div>
 </body>
