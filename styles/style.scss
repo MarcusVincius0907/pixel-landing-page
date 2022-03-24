@@ -19,8 +19,12 @@ $th-blue: #154479;
   height: 0;
 
   border-bottom: 100vh solid $th-blue;
-  border-left: 99vw solid transparent;
+  border-left: 100vw solid transparent;
+
+  
 }
+
+
 
 .banner{
   background-image: url(../images/dollarBannerGreen.png);
@@ -50,7 +54,7 @@ $th-blue: #154479;
   width: 0;
   height: 0;
   border-bottom: 10vh solid $th-blue;
-  border-left: 99vw solid transparent;
+  border-left: 100vw solid transparent;
   transform: rotate(180deg)
 }
 
@@ -58,7 +62,7 @@ $th-blue: #154479;
   width: 0;
   height: 0;
   border-bottom: 10vh solid #029d87;
-  border-left: 99vw solid transparent;
+  border-left: 100vw solid transparent;
   transform: rotate(0deg)
 }
 
@@ -66,7 +70,7 @@ $th-blue: #154479;
   width: 0;
   height: 0;
   border-bottom: 10vh solid #018ea6;
-  border-left: 99vw solid transparent;
+  border-left: 100vw solid transparent;
   transform: rotate(180deg)
 }
 

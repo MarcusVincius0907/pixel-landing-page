@@ -12,7 +12,7 @@ html, body, .mainContainer, .bannerSection, .buySection {
   width: 0;
   height: 0;
   border-bottom: 100vh solid #154479;
-  border-left: 99vw solid transparent;
+  border-left: 100vw solid transparent;
 }
 
 .banner {
@@ -43,7 +43,7 @@ html, body, .mainContainer, .bannerSection, .buySection {
   width: 0;
   height: 0;
   border-bottom: 10vh solid #154479;
-  border-left: 99vw solid transparent;
+  border-left: 100vw solid transparent;
   transform: rotate(180deg);
 }
 
@@ -51,7 +51,7 @@ html, body, .mainContainer, .bannerSection, .buySection {
   width: 0;
   height: 0;
   border-bottom: 10vh solid #029d87;
-  border-left: 99vw solid transparent;
+  border-left: 100vw solid transparent;
   transform: rotate(0deg);
 }
 
@@ -59,7 +59,7 @@ html, body, .mainContainer, .bannerSection, .buySection {
   width: 0;
   height: 0;
   border-bottom: 10vh solid #018ea6;
-  border-left: 99vw solid transparent;
+  border-left: 100vw solid transparent;
   transform: rotate(180deg);
 }
 
