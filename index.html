@@ -52,7 +52,9 @@
 
         <div class="w-full max-w-5xl  m-auto  px-3">
 
-          <div class="header flex justify-between items-center  w-full text-white  mt-10  font-bold">
+          
+          <!-- menu desk -->
+          <div class="hidden md:flex header  justify-between items-center  w-full text-white  mt-10  font-bold">
             <div class="cursor-pointer hover:opacity-50">Resultados</div>
             <div class="cursor-pointer hover:opacity-50">Como Jogar</div>
             <div class="cursor-pointer hover:opacity-50">Probabilidade</div>
@@ -64,14 +66,45 @@
             </div>
           </div>
 
-          <div class="flex justify-between mt-20">
-
-            <div class="logo  ">
-              <img class="shadow-md rounded-full" src="/images/logo.png" alt="">
+          <!-- menu mob -->
+          <div class=" flex md:hidden w-full bg-th-green h-16 rounded-md p-3 items-center justify-between mt-10  ">
+            <div>
+              <div class="logo  ">
+                <img class="shadow-md rounded-full max-w-[45px]" src="/images/logo.png" alt="">
+              </div>
             </div>
+            <div class="flex items-center">
+
+              <div class="text-white font-bold mr-5">LOGIN</div>
+              <div class="cursor pointer  self-end text-white text-4xl"><i class="fa-solid fa-bars"></i></div>
+            </div>
+          </div>
+
+          <div class="flex md:justify-between justify-center mt-20 w-full">
+
+            <div class="logo w-full  ">
+              <img class="shadow-md rounded-full w-full" src="/images/logo.png" alt="">
+              
+            </div>
+
+            
   
-            <div class="moeda">
+            <div class="hidden md:flex moeda">
               <img src="/images/moedaBanner.png" alt="">
+            </div>
+          </div>
+
+          <div class="flex md:hidden justify-center w-full px-5 mt-20">
+
+            <div class="text-white max-w-xl mt-10 text-center md:text-left">
+              <h1 class="text-6xl font-bold mb-5">L2M</h1>
+              <div class="text-3xl">
+                <div class="mb-5">
+    
+                  <strong > Bem vindo!</strong>
+                </div>
+                <div> Aqui na L2M você concorre aos sorteios e tem muitas chances de ganhar prêmios inéditos</div>
+              </div>
             </div>
           </div>
 
@@ -82,9 +115,9 @@
 
       </div>
 
-      <div class="flex justify-center w-full absolute bottom-0">
+      <div class=" hidden md:flex  justify-center w-full absolute bottom-0 px-5">
 
-        <div class="text-white max-w-xl mt-10">
+        <div class="text-white max-w-xl mt-10 text-center md:text-left">
           <h1 class="text-6xl font-bold mb-5">L2M</h1>
           <div class="text-3xl">
             <div class="mb-5">
@@ -111,20 +144,21 @@
       <div class="trianguloAzul">
       </div>
     </div>
-    <section class="buySection max-h-[450px] px-5" >
-      <div class="buyContainer max-w-5xl m-auto max-h-96 flex  justify-center items-center">
+    <section class="buySection max-h-[450px] px-5 my-20 md:my-0" >
+      <div class="buyContainer max-w-5xl m-auto max-h-96 flex flex-col md:flex-row  justify-center items-center">
+        <div class="ml-5">
+          <img src="./images/dinheiro.png" alt="">
+        </div>
         <div class="">
           <div class=" max-w-lg text-th-blue">
-            <div class="text-3xl text-center">A partir de R$1,00 você concorre a um prêmio  de <span class="font-bold text-5xl ">R$500,00</span> </div>
+            <div class="text-3xl text-center py-10">A partir de R$1,00 você concorre a um prêmio  de <span class="font-bold text-5xl ">R$500,00</span> </div>
           </div>
           <div class="mt-5 text-white w-full">
             <div class="cursor-pointer hover:opacity-50 px-3 py-2 m-auto bg-th-green text-center font-bold text-2xl rounded-md max-w-xs">Comprar Agora</div>
           </div>
         </div>
 
-        <div class="ml-5">
-          <img src="./images/dinheiro.png" alt="">
-        </div>
+        
       </div>
       
     </section>
@@ -139,10 +173,10 @@
         <img class="absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
         <img class="absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
         <div class="py-20 m-auto w-full max-w-5xl ">
-          <div class="font-bold text-white text-5xl">
+          <div class="font-bold text-white text-5xl md:text-left text-center">
             Resultado
           </div>
-          <div class="text-white text-xl pt-3">
+          <div class="text-white text-xl pt-3 md:text-left text-center">
             Realizado via Instagram (@pixel.l2m) no em 31/12/2021 às 21h
           </div>
           <div class="w-full pt-20 flex justify-center items-center flex-col">
@@ -154,14 +188,14 @@
               Pixel Vencedor
             </div>
           </div>
-          <div class="font-bold text-white text-5xl pt-20">
+          <div class="md:text-left text-center font-bold text-white text-5xl pt-20">
             Próximos Sorteios
           </div>
           <div class="pt-10" >
-            <div class="flex justify-between">
-              <div class="bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01 / 2022 R$ 1000,00</div>
-              <div class="bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01 / 2022 R$ 1000,00</div>
-              <div class="bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01 / 2022 R$ 1000,00</div>
+            <div class="flex items-center md:justify-between flex-col md:flex-row">
+              <div class="m-2 bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01 / 2022 R$ 1000,00</div>
+              <div class="m-2 bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01 / 2022 R$ 1000,00</div>
+              <div class=" m-2 bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01 / 2022 R$ 1000,00</div>
             </div>
           </div>
         </div>
@@ -181,12 +215,12 @@
           </div>
           <div class=" relative z-10">
 
-            <div class="font-bold text-th-blue text-5xl">
+            <div class="font-bold text-th-blue text-5xl md:text-left text-center">
               Premiação atual
             </div>
             <div class=" mt-16">
               <div class="relative m-auto px-3 py-2 bg-white rounded-md border-4 border-th-blue text-center font-bold text-3xl max-w-xs">
-                <img class="absolute bottom-[-38px] left-[218px]" width="150" src="./images/moeda.png" alt="">
+                <img class="hidden md:flex absolute bottom-[-38px] left-[218px]" width="150" src="./images/moeda.png" alt="">
                 <span> R$ 500,00</span>
                 
               </div>
@@ -200,7 +234,7 @@
             </div>
 
             <div class=" mt-28">
-              <div class="px-3 py-2 bg-gray-300 rounded-md w-full flex justify-evenly divide-x-2 ">
+              <div class="px-3 py-2 bg-gray-300 rounded-md w-full flex flex-col md:flex-row justify-evenly divide-y-2 md:divide-y-0 md:divide-x-2 ">
 
                 <div class="p-1 w-full  text-center text-th-blue font-bold text-2xl">
                   Detalhamento
@@ -233,12 +267,12 @@
             <img class="absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
             <img class="absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
             <div class="pt-20 m-auto w-full max-w-5xl ">
-              <div class="font-bold text-white text-5xl">
+              <div class="font-bold text-white text-5xl md:text-left text-center">
                 Como Jogar
               </div>
               
-              <div class="pt-10 flex ">
-                <div class="p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
+              <div class=" pt-10 flex flex-col md:flex-row ">
+                <div class="m-2 p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
                   <img class="h-[100px]" src="./images/comoJogarIcon1.png" alt="">
                   <div class="font-bold text-3xl pt-5 text-start w-full">O que é?</div>
                   <div class="h-1 bg-th-green px-2 w-full my-2"></div>
@@ -247,7 +281,7 @@
                     <span class=" cursor-pointer font-bold">Ler mais <i class="fa-solid fa-chevron-down ml-1"></i></span> 
                   </div>
                 </div>
-                <div class="p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
+                <div class="m-2 p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
                   <img class="h-[100px]" src="./images/comoJogarIcon2.png" alt="">
                   <div class="font-bold text-3xl pt-5 text-start w-full">Como comprar?</div>
                   <div class="h-1 bg-th-green px-2 w-full my-2"></div>
@@ -256,7 +290,7 @@
                     <span class=" cursor-pointer font-bold">Ler mais <i class="fa-solid fa-chevron-down ml-1"></i></span> 
                   </div>
                 </div>
-                <div class="p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
+                <div class="m-2 p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
                   <img class="h-[100px]" src="./images/comoJogarIcon3.png" alt="">
                   <div class="font-bold text-3xl pt-5 text-start w-full">Como concorrer?</div>
                   <div class="h-1 bg-th-green px-2 w-full my-2"></div>
@@ -267,11 +301,11 @@
                 </div>
               </div>
     
-              <div class="pt-24 flex w-full justify-around">
+              <div class=" pt-24 flex w-full md:justify-around items-center flex-col md:flex-row">
     
-                <div class="cursor-pointer hover:opacity-80"><img width="200" src="./images/comoJogarVideoPlay.png" alt=""></div>
+                <div class="m-2 cursor-pointer hover:opacity-80"><img width="200" src="./images/comoJogarVideoPlay.png" alt=""></div>
     
-                <div class="p-5 bg-white  h-full w-full rounded-md text-th-blue flex flex-col items-center max-w-xl">
+                <div class="m-2 p-5 bg-white  h-full w-full rounded-md text-th-blue flex flex-col items-center md:max-w-xl">
                   <div class="font-bold text-3xl pb-3 text-start w-full">Assita nosso tutorial</div>
                   <div class="text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
                 </div>
@@ -288,63 +322,64 @@
             <img class="absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
             <img class="absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
             <div class="pt-32 m-auto w-full max-w-5xl ">
-              <div class="font-bold text-white text-5xl">
+              <div class="font-bold text-white text-5xl md:text-left text-center">
                 Probabilidade
               </div>
-              
-             <div class="pt-16">
-               <div class="w-full  rounded-md bg-[#047182]" >
-                <div class="w-full bg-th-blue p-3 text-xl font-bold flex justify-around rounded-t-md shadow-xl text-white">
-                  <div class="w-60 text-center">Quantidade de pixels</div>
-                  <div class="w-40 text-center">Valor</div>
-                  <div class="w-40 text-center">Probabilidade</div>
-                  <div class="w-40 text-center">Porcentagem</div>
-                  <div class="w-40 text-center">Status</div>
-                </div>
-                <div class="rounded-b-md ">
-                  <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
-                    <div class="w-60 text-center">1</div>
-                    <div class="w-40 text-center">R$ 1,00</div>
-                    <div class="w-40 text-center">1/N de pixels</div>
-                    <div class="w-40 text-center">0,7%</div>
-                    <div class="w-40 text-center">Baixo</div>
-                  </div>
-                  <div class="h-1 bg-th-green w-full"></div>
-                  <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
-                    <div class="w-60 text-center">1</div>
-                    <div class="w-40 text-center">R$ 1,00</div>
-                    <div class="w-40 text-center">1/N de pixels</div>
-                    <div class="w-40 text-center">0,7%</div>
-                    <div class="w-40 text-center">Baixo</div>
-                  </div>
-                  <div class="h-1 bg-th-green w-full"></div>
-                  <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
-                    <div class="w-60 text-center">1</div>
-                    <div class="w-40 text-center">R$ 1,00</div>
-                    <div class="w-40 text-center">1/N de pixels</div>
-                    <div class="w-40 text-center">0,7%</div>
-                    <div class="w-40 text-center">Baixo</div>
-                  </div>
-                  <div class="h-1 bg-th-green w-full"></div>
-                  <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
-                    <div class="w-60 text-center">1</div>
-                    <div class="w-40 text-center">R$ 1,00</div>
-                    <div class="w-40 text-center">1/N de pixels</div>
-                    <div class="w-40 text-center">0,7%</div>
-                    <div class="w-40 text-center">Baixo</div>
-                  </div>
-                  <div class="h-1 bg-th-green w-full"></div>
-                  <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
-                    <div class="w-60 text-center">1</div>
-                    <div class="w-40 text-center">R$ 1,00</div>
-                    <div class="w-40 text-center">1/N de pixels</div>
-                    <div class="w-40 text-center">0,7%</div>
-                    <div class="w-40 text-center">Baixo</div>
-                  </div>
-    
+              <div class="pt-16 overflow-y-auto">
+                <div class=" min-w-[820px]">
+                  <div class="w-full  rounded-md bg-[#047182]" >
+                   <div class="w-full bg-th-blue p-3 text-xl font-bold flex justify-around rounded-t-md shadow-xl text-white">
+                     <div class="w-60 text-center">Quantidade de pixels</div>
+                     <div class="w-40 text-center">Valor</div>
+                     <div class="w-40 text-center">Probabilidade</div>
+                     <div class="w-40 text-center">Porcentagem</div>
+                     <div class="w-40 text-center">Status</div>
+                   </div>
+                   <div class="rounded-b-md ">
+                     <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                       <div class="w-60 text-center">1</div>
+                       <div class="w-40 text-center">R$ 1,00</div>
+                       <div class="w-40 text-center">1/N de pixels</div>
+                       <div class="w-40 text-center">0,7%</div>
+                       <div class="w-40 text-center">Baixo</div>
+                     </div>
+                     <div class="h-1 bg-th-green w-full"></div>
+                     <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                       <div class="w-60 text-center">1</div>
+                       <div class="w-40 text-center">R$ 1,00</div>
+                       <div class="w-40 text-center">1/N de pixels</div>
+                       <div class="w-40 text-center">0,7%</div>
+                       <div class="w-40 text-center">Baixo</div>
+                     </div>
+                     <div class="h-1 bg-th-green w-full"></div>
+                     <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                       <div class="w-60 text-center">1</div>
+                       <div class="w-40 text-center">R$ 1,00</div>
+                       <div class="w-40 text-center">1/N de pixels</div>
+                       <div class="w-40 text-center">0,7%</div>
+                       <div class="w-40 text-center">Baixo</div>
+                     </div>
+                     <div class="h-1 bg-th-green w-full"></div>
+                     <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                       <div class="w-60 text-center">1</div>
+                       <div class="w-40 text-center">R$ 1,00</div>
+                       <div class="w-40 text-center">1/N de pixels</div>
+                       <div class="w-40 text-center">0,7%</div>
+                       <div class="w-40 text-center">Baixo</div>
+                     </div>
+                     <div class="h-1 bg-th-green w-full"></div>
+                     <div class="w-full  p-3 text-xl font-bold flex justify-around  text-white">
+                       <div class="w-60 text-center">1</div>
+                       <div class="w-40 text-center">R$ 1,00</div>
+                       <div class="w-40 text-center">1/N de pixels</div>
+                       <div class="w-40 text-center">0,7%</div>
+                       <div class="w-40 text-center">Baixo</div>
+                     </div>
+       
+                   </div>
+                 </div>
                 </div>
               </div>
-             </div>
             </div>
           </div>
         </div>
@@ -356,11 +391,11 @@
             <img class="absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
             <img class="absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
             <div class="pt-20 m-auto w-full max-w-5xl ">
-              <div class="font-bold text-white text-5xl">
+              <div class="font-bold text-white text-5xl md:text-left text-center">
                 Receba seu premio
               </div>
     
-              <div class="pt-5 text-white text-3xl">
+              <div class="pt-5 text-white text-3xl md:text-left text-center">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum aperiam similique expedita ea repellendus.
               </div>
     
@@ -387,16 +422,16 @@
     <!-- contato -->
     <section class="bg-th-light-green px-5 pb-20">
       <div class="pt-20 m-auto w-full max-w-5xl">
-        <div class="font-bold text-th-blue text-5xl">
+        <div class="font-bold text-th-blue text-5xl md:text-left text-center">
           Contato
         </div>
-        <div class="pt-5 text-th-blue text-3xl">
+        <div class="pt-5 text-th-blue text-3xl md:text-left text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur earum aperiam similique expedita ea repellendus.
         </div>
         <div class="mt-20 shadow-xl bg-white p-5 rounded-md w-full">
           <form class="pt-10 " action="">
 
-            <div class="flex w-full">
+            <div class="flex w-full flex-col md:flex-row">
               <div class="w-full">
                 <div class=" text-th-blue text-xl flex flex-col mb-5 ">
                   <label class="mb-1" for="name">Nome</label>
@@ -406,7 +441,7 @@
                   <label class="mb-1" for="email">Email</label>
                   <input class="outline-none px-2 py-3 bg-gray-100 rounded-md" placeholder="Digite seu email" type="email" name="email" id="">
                 </div>
-                <div class=" text-th-blue text-xl flex flex-col  ">
+                <div class=" text-th-blue text-xl flex flex-col mb-5 ">
                   <label class="mb-1" for="cel">Celular</label>
                   <input class="outline-none px-2 py-3 bg-gray-100 rounded-md" placeholder="Digite seu número" type="text" name="cel" id="">
                 </div>
@@ -439,13 +474,14 @@
 
     <footer class=" bg-th-blue">
       <div class="w-full px-5 py-10  m-auto max-w-5xl text-white text-xl ">
-        <div class="w-full flex justify-between">
 
-          <div class="w-full p-2">
+        <div class="w-full flex md:justify-between justify-center flex-col md:flex-row">
+
+          <div class="w-full p-2 mb-5 md:mb-0  ">
             <div class=" ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum deleniti velit non officia sed perspiciatis suscipit illo.</div>
           </div>
 
-          <div class="w-full p-2">
+          <div class="w-full p-2 mb-5 md:mb-0">
             <div class="flex">
               <div><i class="fa-solid fa-location-dot"></i></div>
               <div class="ml-4">Rua João Batista Marcondes, 1234, Brooklyn, NY</div>
@@ -456,7 +492,7 @@
             </div>
           </div>
 
-          <div class="flex text-3xl justify-around p-2">
+          <div class="flex text-3xl justify-around p-2 mb-5 md:mb-0">
             <i class="fa-brands fa-whatsapp mx-2"></i>
             <i class="fa-brands fa-facebook-f mx-2"></i>
             <i class="fa-brands fa-instagram mx-2"></i>
@@ -464,13 +500,15 @@
           </div>
 
         </div>
-        <div class="pt-5 p-2">
-          <div class="pb-7">© 2022 sony copyright of america</div>
+
+        <div class="pt-5 p-2 md:text-left text-center">
+          <div class="pb-7 ">© 2022 sony copyright of america</div>
           <div class="flex w-full max-w-xl ">
             <div>Politicas de Privacidade</div>
             <div class="ml-5">Termos e Condições</div>
           </div>
         </div>
+
       </div>
     </footer>
 
