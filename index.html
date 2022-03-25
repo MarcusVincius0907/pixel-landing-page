@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,10 +21,12 @@
   <link rel="manifest" href="images/favico/manifest.json">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.1/dist/flowbite.min.css" />
   <link rel="stylesheet" href="/styles/style.css">
   
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -55,19 +57,19 @@
           
           <!-- menu desk -->
           <div class="hidden md:flex header  justify-between items-center  w-full text-white  mt-10  font-bold">
-            <div class="cursor-pointer hover:opacity-50">Resultados</div>
-            <div class="cursor-pointer hover:opacity-50">Como Jogar</div>
-            <div class="cursor-pointer hover:opacity-50">Probabilidade</div>
-            <div class="cursor-pointer hover:opacity-50">Premiação</div>
-            <div class="cursor-pointer hover:opacity-50">Sobre Nós</div>
-            <div class="cursor-pointer hover:opacity-50">Contato</div>
-            <div class="bg-th-green p-3 rounded-md btnLogin cursor-pointer hover:opacity-90">
+            <a href="#resultados" class="cursor-pointer hover:opacity-50">Resultados</a>
+            <a href="#premiacao" class="cursor-pointer hover:opacity-50">Premiação</a>
+            <a href="#comoJogar" class="cursor-pointer hover:opacity-50">Como Jogar</a>
+            <a href="#probabilidade" class="cursor-pointer hover:opacity-50">Probabilidade</a>
+            <a href="./about.html" target="_blank" class="cursor-pointer hover:opacity-50">Sobre Nós</a>
+            <a href="#contato" class="cursor-pointer hover:opacity-50">Contato</a>
+            <a href="#" class="bg-th-green p-3 rounded-md btnLogin cursor-pointer hover:opacity-90">
               LOGIN
-            </div>
+            </a>
           </div>
 
           <!-- menu mob -->
-          <div class=" flex md:hidden w-full bg-th-green h-16 rounded-md p-3 items-center justify-between mt-10  ">
+          <div class=" flex md:hidden w-full bg-th-green h-16 rounded-md p-3 items-center justify-between mt-10 relative ">
             <div>
               <div class="logo  ">
                 <img class="shadow-md rounded-full max-w-[45px]" src="/images/logo.png" alt="">
@@ -76,8 +78,36 @@
             <div class="flex items-center">
 
               <div class="text-white font-bold mr-5">LOGIN</div>
-              <div class="cursor pointer  self-end text-white text-4xl"><i class="fa-solid fa-bars"></i></div>
+              <div data-dropdown-toggle="dropdown" class="cursor pointer  self-end text-white text-4xl"><i class="fa-solid fa-bars"></i></div>
             </div>
+          </div>
+          <div class="drop">
+            
+
+            <div id="dropdown" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700" data-popper-placement="bottom" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(583px, 681px);">
+            <ul class="py-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefault">
+              <li>
+                <a href="#resultados" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Resultados</a>
+              </li>
+              <li>
+                <a href="#premiacao" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Premiação</a>
+              </li>
+              <li>
+                <a href="#comoJogar" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Como Jogar</a>
+              </li>
+              <li>
+                <a href="#probabilidade" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Probabilidade</a>
+              </li>
+              <li>
+                <a href="./about.html" target="_blank" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sobre nós</a>
+              </li>
+              <li>
+                <a href="#contato" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contato</a>
+              </li>
+            
+            </ul>
+            </div>
+
           </div>
 
           <div class="flex md:justify-between justify-center mt-20 w-full">
@@ -170,7 +200,7 @@
       <div class="trianguloVerde">
     </div>
     </div>
-    <section class="">
+    <section id="resultados" class="">
       <div class="gradient  relative px-5">
         <img class="hidden md:block absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
         <img class="hidden md:block absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
@@ -195,9 +225,9 @@
           </div>
           <div class="pt-10" >
             <div class="flex items-center md:justify-between flex-col md:flex-row">
-              <div class="m-2 bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01 / 2022 R$ 1000,00</div>
-              <div class="m-2 bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01 / 2022 R$ 1000,00</div>
-              <div class=" m-2 bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01 / 2022 R$ 1000,00</div>
+              <div class="m-2 bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01/2022 R$ 1000,00</div>
+              <div class="m-2 bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01/2022 R$ 1000,00</div>
+              <div class=" m-2 bg-white px-3 py-4 max-w-xs text-th-dark-green text-xl font-bold rounded-md text-center">01/2022 R$ 1000,00</div>
             </div>
           </div>
         </div>
@@ -205,11 +235,11 @@
     </section>
 
     <!-- premiação -->
-    <div class="w-full overflow-hidden">
+    <div  class="w-full overflow-hidden">
       <div class="trianguloAzulClaro">
     </div>
     </div>
-    <section  >
+    <section id="premiacao" >
       <div class="bg-white w-full px-5">
         <div class="py-20 m-auto w-full max-w-5xl relative ">
           <div class="absolute top-40 flex justify-center items-center w-full z-0">
@@ -264,41 +294,41 @@
       <div class="gradient pb-32 px-5">
 
         <!-- como jogar -->
-        <div class="h-full">
+        <div id="comoJogar" class="h-full">
           <div class=" h-full relative">
-            <img class="hidden md:block absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
-            <img class="hidden md:block absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
+            <img class="z-0 hidden md:block absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
+            <img class="z-0 hidden md:block absolute bottom-20 right-20 rotate-180" width="120" src="./images/setaLista.png" alt="">
             <div class="pt-20 m-auto w-full max-w-5xl ">
               <div class="font-bold text-white text-3xl md:text-5xl md:text-left text-center">
                 Como Jogar
               </div>
               
-              <div class=" pt-10 flex flex-col md:flex-row ">
+              <div class=" pt-10 flex flex-col md:flex-row relative z-10 ">
                 <div class="m-2 p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
                   <img class="h-[100px]" src="./images/comoJogarIcon1.png" alt="">
                   <div class="font-bold text-3xl pt-5 text-start w-full">O que é?</div>
                   <div class="h-1 bg-th-green px-2 w-full my-2"></div>
-                  <div class="text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
-                  <div class="w-full flex justify-end pt-2 ">
-                    <span class=" cursor-pointer font-bold">Ler mais <i class="fa-solid fa-chevron-down ml-1"></i></span> 
+                  <div id="text-read-more-1" class="text-start h-24 overflow-hidden ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
+                  <div id="read-more-1" onclick="readMore('1')" class="w-full flex justify-end pt-2 ">
+                    <span class=" cursor-pointer font-bold"><span> Ler mais </span> <i class="fa-solid fa-chevron-down ml-1"></i></span> 
                   </div>
                 </div>
                 <div class="m-2 p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
                   <img class="h-[100px]" src="./images/comoJogarIcon2.png" alt="">
                   <div class="font-bold text-3xl pt-5 text-start w-full">Como comprar?</div>
                   <div class="h-1 bg-th-green px-2 w-full my-2"></div>
-                  <div class="text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
-                  <div class="w-full flex justify-end pt-2 ">
-                    <span class=" cursor-pointer font-bold">Ler mais <i class="fa-solid fa-chevron-down ml-1"></i></span> 
+                  <div id="text-read-more-2" class="text-start h-24 overflow-hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
+                  <div id="read-more-2" onclick="readMore('2')" class="w-full flex justify-end pt-2 ">
+                    <span class=" cursor-pointer font-bold"><span> Ler mais </span> <i class="fa-solid fa-chevron-down ml-1"></i></span> 
                   </div>
                 </div>
                 <div class="m-2 p-5 py-7 bg-white mx-2 h-full w-full rounded-md text-th-blue flex flex-col items-center">
                   <img class="h-[100px]" src="./images/comoJogarIcon3.png" alt="">
                   <div class="font-bold text-3xl pt-5 text-start w-full">Como concorrer?</div>
                   <div class="h-1 bg-th-green px-2 w-full my-2"></div>
-                  <div class="text-start">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
-                  <div class="w-full flex justify-end pt-2 ">
-                    <span class=" cursor-pointer font-bold">Ler mais <i class="fa-solid fa-chevron-down ml-1"></i></span> 
+                  <div id="text-read-more-3" class="text-start h-24 overflow-hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has beenindustry's...</div>
+                  <div id="read-more-3" onclick="readMore('3')" class="w-full flex justify-end pt-2 ">
+                    <span class=" cursor-pointer font-bold"><span> Ler mais</span> <i class="fa-solid fa-chevron-down ml-1"></i></span> 
                   </div>
                 </div>
               </div>
@@ -318,7 +348,7 @@
         </div>
 
         <!-- Probabilidade -->
-        <div class="h-full mt-[75px] " >
+        <div id="probabilidade" class="h-full mt-[75px] " >
           
           <div class=" h-full relative">
             <img class="hidden md:block absolute top-20 left-20" width="120" src="./images/setaLista.png" alt="">
@@ -422,7 +452,7 @@
     </section>
 
     <!-- contato -->
-    <section class="bg-th-light-green px-5 pb-20">
+    <section id="contato" class="bg-th-light-green px-5 pb-20">
       <div class="pt-20 m-auto w-full max-w-5xl">
         <div class="font-bold text-th-blue text-3xl md:text-5xl md:text-left text-center">
           Contato
@@ -507,7 +537,7 @@
           <div class="pb-7 ">© 2022 sony copyright of america</div>
           <div class="flex w-full max-w-xl ">
             <div>Politicas de Privacidade</div>
-            <div class="ml-5">Termos e Condições</div>
+            <a href="./terms.html" target="_blank" class="ml-5">Termos e Condições</a>
           </div>
         </div>
 
@@ -515,5 +545,6 @@
     </footer>
 
   </div>
+  <script src="./js/main.js"></script>
 </body>
 </html>

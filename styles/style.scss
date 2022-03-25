@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,7 +7,9 @@
 html, body, .mainContainer, .bannerSection, .buySection{
   margin: 0;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+  
   
 }
 
@@ -81,3 +83,9 @@ $th-blue: #154479;
 .gradient-inverse{
   background: linear-gradient(0, #019d87 0%, #08545E 29.52%, #0A4354 36.38%, #0B384E 43.85%, #0B344C 52.1%, #0B394F 59.33%, #094757 67.66%, #08545E 73.15%, #018FA7 102.2%);
 }
+
+.drop{
+  display: none;
+  position: relative;
+}
+
