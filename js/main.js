@@ -1,5 +1,4 @@
 function readMore(index){
-
   const idBtn = `#read-more-${index}`;
   const idText = `#text-read-more-${index}`;
 
@@ -8,7 +7,7 @@ function readMore(index){
   let btnChevron = document.querySelector(idBtn + '> span > i');
   let text = document.querySelector(idText);
 
-  if(btnText.textContent == 'Ler mais'){
+  if(btnText.textContent.replace(/\s/g, '').toLowerCase() == 'lermais'){
     btnText.innerHTML = 'Ler menos'
     btnChevron.classList.remove('fa-chevron-down')
     btnChevron.classList.add('fa-chevron-up')

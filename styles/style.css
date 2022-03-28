@@ -72,12 +72,8 @@ html, body, .mainContainer, .bannerSection, .buySection {
   background: linear-gradient(0, #019d87 0%, #08545E 29.52%, #0A4354 36.38%, #0B384E 43.85%, #0B344C 52.1%, #0B394F 59.33%, #094757 67.66%, #08545E 73.15%, #018FA7 102.2%);
 }
 
-.drop {
+/* .drop{
   display: none;
   position: relative;
-}
-
-.ct {
-  transition: 0.25s ease-in;
-}
+} */
 /*# sourceMappingURL=style.css.map */
