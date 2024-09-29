@@ -4,7 +4,7 @@ services:
     image: nginx:alpine
     container_name: static-files-server
     ports:
-      - "8082:80"
+      - "8084:80"
     volumes:
       - ./:/usr/share/nginx/html
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
